@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('cyberpunk_background.jpg');
+    background-image: url('nocturne.jpg');
     background-size: cover;
     color: #fff;
 }
@@ -47,7 +47,7 @@ main {
     width: calc(100% - 200px); /* Adjusting width to accommodate the sidebar */
 }
 
-header {
+header, article, footer {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 20px;
@@ -56,15 +56,9 @@ header {
 }
 
 article {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
     margin-bottom: 20px;
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
     padding: 10px;
-    text-align: center;
-    width: 100%;
 }
