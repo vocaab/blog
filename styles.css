@@ -7,6 +7,7 @@ body {
     color: #fff;
     min-height: 100vh; /* Ensure the container takes up at least the full height of the viewport */
     position: relative; /* Needed for the fixed footer */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .container {
