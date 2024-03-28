@@ -5,17 +5,22 @@ body {
     background-image: url('nocturne.jpg');
     background-size: cover;
     color: #fff;
+    min-height: 100vh; 
+    position: relative; /* Needed for the fixed footer */
 }
 
 .container {
     display: flex;
+    flex-direction: column; 
+    min-height: 100vh; /* Ensure the container takes up at least the full height of the viewport */
 }
 
 .sidebar {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     width: 200px;
-    flex: 0 0 auto; /* Fixed width sidebar */
+    flex-shrink: 0; /* Sidebar won't shrink */
+    padding-bottom: 20px; /* Add padding at the bottom to avoid overlapping with footer */
 }
 
 .sidebar header {
@@ -26,6 +31,7 @@ body {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0; /* Remove default margin */
 }
 
 nav ul li {
@@ -60,5 +66,11 @@ article {
 }
 
 footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
     padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Fixed positioning */
+    bottom: 0; /* Stick to the bottom */
 }
