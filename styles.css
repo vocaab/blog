@@ -9,13 +9,13 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row;
 }
 
 .sidebar {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     width: 200px;
+    flex: 0 0 auto; /* Fixed width sidebar */
 }
 
 .sidebar header {
@@ -44,7 +44,7 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-    width: calc(100% - 200px); /* Adjusting width to accommodate the sidebar */
+    flex: 1; /* Take remaining space */
 }
 
 header, article, footer {
